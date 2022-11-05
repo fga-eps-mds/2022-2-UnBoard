@@ -17,9 +17,9 @@ Como este treinamento possivelmente impactará positivamente o desempenho dos en
 Descreva de forma sucinta como os envolvidos irão treinar. Links, fotos ou documentos usados no treinamento são bem vindos nos comentários. **Caso não saiba, retire esse tópico e documente como houve o treinamento abaixo.**
 
 ## Tarefas
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] ...
+- [ ] Tarefa 1
+- [ ] Tarefa 2
+- [ ] ...
 
 ## Critérios de Aprovação
 - Critério 1

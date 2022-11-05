@@ -11,9 +11,9 @@ assignees: ''
 Descrever de forma clara e breve **o que, porque e como** será feito.
 
 ## Tarefas
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] ...
+- [ ] Tarefa 1
+- [ ] Tarefa 2
+- [ ] ...
 
 ## Critérios de Aprovação
 - Critério 1
