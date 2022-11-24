@@ -4,5 +4,5 @@
   <img src="Imagens/Fly bird logo.png">
 </div>
 <div>
-  <h3>Bem vindos ao projeto UnBoard</h3>
+  <h1>Bem vindos ao projeto UnBoard</h3>
 </div>
