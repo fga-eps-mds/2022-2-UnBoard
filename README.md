@@ -15,12 +15,12 @@
   <p>Os dados coletados estarão em uma página Web de maneira que facilite a visualização e compreensão do usuário, por meio de dashboards que podem ser filtrados de acordo com o Campus desejado.</p>
 </div>
 <div>
-  <h3>Colaboradores</h3>
+  <h3>Contribuidores</h3>
   
   <a href="https://github.com/Raphides">Raphael Silva</a><br></br>
   <a href="https://github.com/JoaoBarreto03">João Barreto</a><br></br>
   <a href="https://github.com/YuriBre">Breno Yuri</a><br></br>
-  <a href="https://github.com/Danilo-Carvalho-Antuness">Danilo Carvalho</a><br></br>
+  <a href="https://github.com/Danilo-Carvalho-Antunes">Danilo Carvalho</a><br></br>
   <a href="https://github.com/guilhermeKishimoto">Guilherme Kishimoto</a><br></br>
   <a href="https://github.com/frmiza">Franciso Mizael</a><br></br>
   
