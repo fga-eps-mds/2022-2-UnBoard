@@ -25,8 +25,9 @@
   <a href="https://github.com/frmiza">Franciso Mizael</a><br></br>
   
 </div>
-##  ©Licença
+<div>
+  <h1>## ©Licença</h1>
 
-This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
-
+<p>This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©</p>
+</div>
 
