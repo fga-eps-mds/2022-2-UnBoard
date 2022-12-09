@@ -19,10 +19,10 @@
   
   <a href="https://github.com/Raphides">Raphael Silva</a><br></br>
   <a href="https://github.com/JoaoBarreto03">João Barreto</a><br></br>
-  <a href="https://github.com/JoaoBarreto03">Breno Yuri</a><br></br>
-  <a href="https://github.com/JoaoBarreto03">Danilo Carvalho</a><br></br>
-  <a href="https://github.com/JoaoBarreto03">Guilherme Kishimoto</a><br></br>
-  <a href="https://github.com/JoaoBarreto03">Franciso Mizael</a><br></br>
+  <a href="https://github.com/YuriBre">Breno Yuri</a><br></br>
+  <a href="https://github.com/Danilo-Carvalho-Antuness">Danilo Carvalho</a><br></br>
+  <a href="https://github.com/guilhermeKishimoto">Guilherme Kishimoto</a><br></br>
+  <a href="https://github.com/frmiza">Franciso Mizael</a><br></br>
   
 </div>
 
