@@ -26,7 +26,7 @@
   
 </div>
 <div>
-  <h1>## ©Licença</h1>
+  <h3>©Licença</h3>
 
 <p>This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©</p>
 </div>
