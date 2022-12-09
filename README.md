@@ -25,4 +25,8 @@
   <a href="https://github.com/frmiza">Franciso Mizael</a><br></br>
   
 </div>
+##  ©Licença
+
+This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
+
 
