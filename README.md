@@ -14,4 +14,9 @@
   <h3>Como esses dados serão apresentados?</h3>
   <p>Os dados coletados estarão em uma página Web de maneira que facilite a visualização e compreensão do usuário, por meio de dashboards que podem ser filtrados de acordo com o Campus desejado.</p>
 </div>
+<div>
+  <h3>Colaboradores</h3>
+    <a href="https://github.com/Raphides">Raphael Silva</a>
+  <a href="https://github.com/JoaoBarreto03">João Barreto</a>
+</div>
 
