@@ -49,45 +49,48 @@ class VestInfo:
             """
             for i in range(lines):
                 self.pdf.readline()
-        def fill_column(from_table: list, campus: CampusInfo, column_name: str, content: list) -> None:
+        def fill_column(table_names: list, campus: CampusInfo, column_name: str, new_values: list, new_row: bool = False) -> None:
             """fill
 
             Args:
-                from_table (list): a list of table's names in the format [("name1"), ("name2"), ...] 
+                table_names (list): a list of table's names in the format [("name1"), ("name2"), ...] 
                 campus (CampusInfo): the object that contains the database to be modified.
                 column_name (str): only one column name is allowed. 
-                content (list): what is going to be insert into. 
+                new_values (list): a list cotaining the new values as its elements
+                new_row (bool): default=False. It is important to decide if the method will use "INSERT INTO" or "UPDATE" statement.
+ 
             Returns:
                 None
             """
-            for table_name in from_table:
-                campus.fill_column(str(table_name[0]), column_name, content)
+            for table_name in table_names:
+                campus.fill_column(str(table_name[0]), column_name, new_values, new_row=new_row)
 
         # process
         # Dacy - Diurno
         skip(5)
-        fill_column(getTables(Quotas.TUDO), self.darcy["diurno"], "Cursos", get_sequence())
+        fill_column(getTables(Quotas.TUDO), self.darcy["diurno"], "Cursos", get_sequence(), new_row=True )
         # Darcy - Noturno
         skip(1)
-        fill_column(getTables(Quotas.TUDO), self.darcy["noturno"], "Cursos", get_sequence())
+        fill_column(getTables(Quotas.TUDO), self.darcy["noturno"], "Cursos", get_sequence(), new_row=True)
         # Ceilandia - FCE
         skip(2)
-        fill_column(getTables(Quotas.TUDO), self.fce, "Cursos", get_sequence())
+        fill_column(getTables(Quotas.TUDO), self.fce, "Cursos", get_sequence(), new_row=True)
         # Gama - FGA
         skip(3)
-        fill_column(getTables(Quotas.TUDO), self.fga, "Cursos", get_sequence())
+        fill_column(getTables(Quotas.TUDO), self.fga, "Cursos", get_sequence(), new_row=True)
         # FUP - Diurno
         skip(3)
-        fill_column(getTables(Quotas.TUDO), self.fup["diurno"], "Cursos", get_sequence())
+        fill_column(getTables(Quotas.TUDO), self.fup["diurno"], "Cursos", get_sequence(), new_row=True)
         # FUP - Noturno
         skip(1)
-        fill_column(getTables(Quotas.TUDO), self.fup["noturno"], "Cursos", get_sequence())
+        fill_column(getTables(Quotas.TUDO), self.fup["noturno"], "Cursos", get_sequence(), new_row=True)
 
         # skipping column labels:
         skip(122)
         
         #
-        fill_column(getTables(Quotas.NEGROS), self.darcy["diurno"], "Vagas", get_sequence())
+        ls = get_sequence()
+        fill_column(getTables(Quotas.NEGROS), self.darcy["diurno"], "Vagas", ls)
         #fill_column(getTables(Quotas.NEGROS), self.darcy["noturno"], "Vagas", get_sequence())
         #fill_column(getTables(Quotas.NEGROS), self.fce, "Vagas", get_sequence())
         #tmp = get_sequence()

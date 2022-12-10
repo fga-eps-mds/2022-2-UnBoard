@@ -14,7 +14,7 @@ def create_chooser():
     if len(cur.execute("SELECT name FROM sqlite_master").fetchall()) == 0:
         cur.execute("""--sql
         CREATE TABLE Seletor(
-            Tabela VARCHAR(100),
+            Codigo_de_Tabela VARCHAR(100),
             Cotas VARCHAR(100),
             Pobre INTEGER,
             Preto_Pardo_Indigena INTEGER,
@@ -45,11 +45,11 @@ def getTables(quota: Quotas, is_poor: bool=False, is_black_brown_or_native: bool
     cur = con.cursor()
     if quota.value == Quotas.TUDO.value:
         return cur.execute("""--sql
-        SELECT Tabela
+        SELECT Codigo_de_Tabela
         FROM Seletor;""").fetchall()
     else: 
         return cur.execute("""--sql
-        SELECT Tabela
+        SELECT Codigo_de_Tabela
         FROM Seletor
         WHERE Cotas = ? AND Pobre = ? AND Preto_Pardo_Indigena = ? AND Deficiente = ?;
         """, (quota.value, int(is_poor), int(is_black_brown_or_native), int(is_deficient))).fetchall()
