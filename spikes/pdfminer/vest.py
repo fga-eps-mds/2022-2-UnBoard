@@ -9,6 +9,7 @@ class VestInfo:
     def __init__(self, edition: int) -> None:
         create_chooser()
         self.edition = edition
+        os.system(f"pdf2txt.py -o ./databases/vest_{self.edition}.txt ./pdfs/VESTUNB_{self.edition}.PDF")
         self.uri = f"./databases/vest_{self.edition}"
         try:
             os.mkdir(self.uri)
