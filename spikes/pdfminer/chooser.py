@@ -6,6 +6,7 @@ class Quotas(Enum):
     NEGROS = "Cotas para negros"
     ESCOLA_PÚBLICA = "Sistema de Cotas para Escolas Públicas"
     TOTAL = "Total"
+    TUDO = "*"
 
 def create_chooser():
     con = sql3.connect("./databases/chooser.db")
@@ -37,17 +38,23 @@ def create_chooser():
     con.commit()
     con.close()
 
-def getTable(quota: Quotas, is_poor: bool=False, is_black_brown_or_native: bool=False, is_deficient: bool=False) -> list or None:
+def getTables(quota: Quotas, is_poor: bool=False, is_black_brown_or_native: bool=False, is_deficient: bool=False) -> list or None:
     """ if your quota is not ESCOLA PÚBLICA, ignore the others parameters except from quota.
     """
     con = sql3.connect("./databases/chooser.db")
     cur = con.cursor()
-    return cur.execute("""--sql
-    SELECT Tabela
-    FROM Seletor
-    WHERE Cotas = ? AND Pobre = ? AND Preto_Pardo_Indigena = ? AND Deficiente = ?;
-    """, (quota.value, int(is_poor), int(is_black_brown_or_native), int(is_deficient))).fetchall()
+    if quota.value == Quotas.TUDO.value:
+        return cur.execute("""--sql
+        SELECT Tabela
+        FROM Seletor;""").fetchall()
+    else: 
+        return cur.execute("""--sql
+        SELECT Tabela
+        FROM Seletor
+        WHERE Cotas = ? AND Pobre = ? AND Preto_Pardo_Indigena = ? AND Deficiente = ?;
+        """, (quota.value, int(is_poor), int(is_black_brown_or_native), int(is_deficient))).fetchall()
+
 
 if __name__ == "__main__":
     create_chooser()
-    print(getTable(Quotas.ESCOLA_PÚBLICA, True, True, False))
+    print(getTables(Quotas.TUDO, False, False, False)[0][0])
