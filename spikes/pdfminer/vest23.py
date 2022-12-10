@@ -4,7 +4,7 @@ from chooser import *
 vest23 = VestInfo(23)
 # process
 # Dacy - Diurno
-vest23.vest23.skip(5)
+vest23.skip(5)
 vest23.modify_column(getTables(Quotas.TUDO), vest23.darcy["diurno"], "Cursos", vest23.get_sequence(), new_row=True )
 # Darcy - Noturno
 vest23.skip(1)
