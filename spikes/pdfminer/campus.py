@@ -71,5 +71,5 @@ class CampusInfo():
                 UPDATE {table_name}
                 SET {column_name} = ?
                 WHERE ID = {index};
-                """, (new_values[index],))
+                """, (new_values[index - 1],))
         self._connection.commit()
