@@ -7,6 +7,7 @@ import os
 
 class VestInfo:
     def __init__(self, edition: int) -> None:
+        create_chooser()
         self.edition = edition
         self.uri = f"./databases/vest_{self.edition}"
         try:
