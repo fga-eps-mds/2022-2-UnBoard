@@ -33,12 +33,12 @@
  <a href="#autor">Autor</a> •
 </p>
 
-# Funcionalidades
-<h3>O UnBoard será capaz de: </h3>
-<p> • Ler PDFs com informações sobre aprovados no PAS UnB </p> 
-<p> • Filtrar as informações e criar Dashboards </p>
-<p> • Permitir o acesso a essas informações por meio de uma página WEB </p> 
-<p> • Consultar esses Dashboards de acordo com o campus escolhido </p> 
+## ⚙️ Funcionalidades
+
+- [x] Ler PDFs com informações sobre aprovados no PAS UnB
+- [x] Filtrar as informações e criar Dashboards
+- [x] Permitir o acesso a essas informações por meio de uma página WEB
+- [x] Consultar esses Dashboards de acordo com o campus escolhido 
 
 
  # Contribuidores
