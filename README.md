@@ -1,4 +1,6 @@
-# 2022-2-Squad06-Projeto UnBoard
+<div align="center">
+  <h1>2022-2-Squad06-Projeto UnBoard</h3>
+</div>
 
 <div align="center">
   <center><img src="Imagens/Fly bird logo.png"></center>
@@ -23,12 +25,12 @@
 
 # Conteúdos
 <p>
- <a href="#objetivo"> • Objetivo</a> <br></br>
- <a href="#roadmap"> • Roadmap</a> <br></br>
- <a href="#tecnologias"> • Tecnologias</a> <br></br>
- <a href="#contribuidores"> • Contribuidores</a> <br></br>
- <a href="#licença"> • Licença</a> <br></br>
- <a href="#autor"> • Autor</a> <br></br>
+ <a href="#objetivo">Objetivo</a> •
+ <a href="#roadmap">Roadmap</a> •
+ <a href="#tecnologias">Tecnologias</a> •
+ <a href="#contribuidores">Contribuidores</a> •
+ <a href="#licença">Licença</a> •
+ <a href="#autor">Autor</a> •
 </p>
 
 
