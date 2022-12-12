@@ -26,9 +26,6 @@
 ## 🕊 O que é o UnBoard?
   O UnBoard é um projeto que tem por objetivo a apresentação de dados estatísticos dos aprovados pelo vestibular anual da Universidade de Brasília (UnB), por meio de gráficos que informam a quantidade de aprovados, a demanda de vagas, as vagas reservadas e outras informações de todos os cursos da UnB. Os dados coletados estarão em uma página Web de maneira que facilite a visualização e compreensão do usuário, por meio de dashboards que podem ser filtrados de acordo com o Campus desejado.
 
-
-
-
 ## ⚙️ Funcionalidades
 
 - [x] Ler PDFs com informações sobre aprovados no PAS UnB
@@ -52,8 +49,6 @@
   <a href="https://github.com/Danilo-Carvalho-Antunes">Danilo Carvalho</a><br></br>
   <a href="https://github.com/guilhermeKishimoto">Guilherme Kishimoto</a><br></br>
   <a href="https://github.com/frmiza">Franciso Mizael</a><br></br>
-  
- 
   
 ## Licença ©
 Este software está sob licença [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
