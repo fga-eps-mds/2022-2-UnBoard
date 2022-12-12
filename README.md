@@ -1,6 +1,6 @@
 # 2022-2-Squad06-Projeto UnBoard
 
-<div>
+<div align="center">
   <center><img src="Imagens/Fly bird logo.png"></center>
 </div>
 <div>
