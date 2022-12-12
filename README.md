@@ -10,12 +10,15 @@
 </div>
 
 # Conteúdos
+ <h4 align="center"> 
+	🚧  UnBoard em construção...  🚧
+  </h4>
 <p align="center">
- <a href="O que é O UnBoard?">Objetivo</a> •
- <a href="#Funcionalidades">Funcionalidades</a> •
- <a href="#tecnologias">Tecnologias</a> •
- <a href="#contribuidores">Contribuidores</a> •
- <a href="#licença">Licença</a>
+ <a href="#-O que é O UnBoard?">Objetivo</a> •
+ <a href="#-Funcionalidades">Funcionalidades</a> •
+ <a href="#-Tecnologias">Tecnologias</a> •
+ <a href="#-Contribuidores">Contribuidores</a> •
+ <a href="#-Licença">Licença</a>
 
 </p>
 
@@ -49,9 +52,7 @@
   <a href="https://github.com/guilhermeKishimoto">Guilherme Kishimoto</a><br></br>
   <a href="https://github.com/frmiza">Franciso Mizael</a><br></br>
   
-  <h4 align="center"> 
-	🚧  UnBoard em construção...  🚧
-  </h4>
+ 
   
 # Licença ©
 Este software está sob licença [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
