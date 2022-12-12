@@ -24,7 +24,7 @@
 </div>
 
 # Conteúdos
-<p>
+<p align="center">
  <a href="#objetivo">Objetivo</a> •
  <a href="#roadmap">Roadmap</a> •
  <a href="#tecnologias">Tecnologias</a> •
@@ -32,6 +32,13 @@
  <a href="#licença">Licença</a> •
  <a href="#autor">Autor</a> •
 </p>
+
+# Funcionalidades
+<h3>O UnBoard será capaz de: </h3> <br></br>
+<p>- [x] Ler PDFs com informações sobre aprovados no PAS UnB </p>
+<p>- [x] Filtrar as informações e criar Dashboards </p>
+<p>- [x] Permitir o acesso a essas informações por meio de uma página WEB </p>
+<p>- [x] Consultar esses Dashboards de acordo com o campus escolhido </p>
 
 
  # Contribuidores
