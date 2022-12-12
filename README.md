@@ -15,14 +15,12 @@
 	🚧  UnBoard em construção...  🚧
   </h4>
   
-<p align="center">
-	
+<p align="center">	
  <a href="#-O que é O UnBoard?">Objetivo</a> •
  <a href="#-Funcionalidades">Funcionalidades</a> •
  <a href="#-Tecnologias">Tecnologias</a> •
  <a href="#-Contribuidores">Contribuidores</a> •
  <a href="#-Licença">Licença</a>
-
 </p>
 
 ## 🕊 O que é o UnBoard?
