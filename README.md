@@ -14,8 +14,7 @@
   <h3>Como esses dados serão apresentados?</h3>
   <p>Os dados coletados estarão em uma página Web de maneira que facilite a visualização e compreensão do usuário, por meio de dashboards que podem ser filtrados de acordo com o Campus desejado.</p>
 </div>
-<img src="https://img.shields.io/static/v1?label=React&message=JavaScript&color=61DAFB&style=for-the-badge&logo=react"/>
-<img src="https://img.shields.io/static/v1?label=Node.js&message=v12.22.9&color=339933&style=for-the-badge&logo=node.js"/>
+<img src="https://img.shields.io/static/v1?label=React&message=JavaScript&color=61DAFB&style=for-the-badge&logo=react"/> <img src="https://img.shields.io/static/v1?label=Node.js&message=v12.22.9&color=339933&style=for-the-badge&logo=node.js"/>
 <img src="https://img.shields.io/static/v1?label=Linux&message=Ubuntu&color=E95420&style=for-the-badge&logo=Ubuntu"/>
 
 
