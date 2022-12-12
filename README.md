@@ -37,6 +37,7 @@
 <img src="https://img.shields.io/static/v1?label=Node.js&message=v12.22.9&color=339933&style=for-the-badge&logo=node.js"/>
 <img src="https://img.shields.io/static/v1?label=Linux&message=Ubuntu&color=E95420&style=for-the-badge&logo=Ubuntu"/>
 <img src="https://img.shields.io/static/v1?label=Visual Studio&message=Code&color=007ACC&style=for-the-badge&logo=Visual Studio Code"/>
+<img src="https://img.shields.io/static/v1?label=Python&message=3&color=3776AB&style=for-the-badge&logo=Python"/>
 </div>
 
  ## 👨‍💻 Contribuidores
