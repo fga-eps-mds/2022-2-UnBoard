@@ -1,10 +1,9 @@
-<div align="center">
-     # 2022-2-Squad06-Projeto UnBoard
-</div>
+# 2022-2-Squad06-Projeto UnBoard
+
 <div align="center">
   <center><img src="Imagens/Fly bird logo.png"></center>
 </div>
-<div>
+<div align="center">
   <h1>Bem vindos ao projeto UnBoard</h3>
 </div>
 <div>
@@ -27,8 +26,8 @@
  <a href="#objetivo"> • Objetivo</a> <br></br>
  <a href="#roadmap"> • Roadmap</a> <br></br>
  <a href="#tecnologias"> • Tecnologias</a> <br></br>
- <a href="#contribuicao"> • Contribuição</a> <br></br>
- <a href="#licenc-a"> • Licença</a> <br></br>
+ <a href="#contribuidores"> • Contribuidores</a> <br></br>
+ <a href="#licença"> • Licença</a> <br></br>
  <a href="#autor"> • Autor</a> <br></br>
 </p>
 
@@ -46,9 +45,7 @@
 	🚧  UnBoard em construção...  🚧
   </h4>
   
-<div>
-  <h3>©Licença</h3>
-objetivo
+# Licença
 <p>This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©</p>
 </div>
 
