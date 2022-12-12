@@ -22,7 +22,7 @@
 </div>
 
 # Conteúdos
-<p align="center">
+<p>
  <a href="#objetivo"> • Objetivo</a> <br></br>
  <a href="#roadmap"> • Roadmap</a> <br></br>
  <a href="#tecnologias"> • Tecnologias</a> <br></br>
