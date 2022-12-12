@@ -22,6 +22,15 @@
 </div>
 
 
+<p align="center">
+ <a href="#objetivo">Objetivo</a> •
+ <a href="#roadmap">Roadmap</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#contribuicao">Contribuição</a> • 
+ <a href="#licenc-a">Licença</a> • 
+ <a href="#autor">Autor</a>
+</p>
+
 
 <div>
   <h3>Contribuidores</h3>
@@ -36,7 +45,7 @@
 </div>
 <div>
   <h3>©Licença</h3>
-
+objetivo
 <p>This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©</p>
 </div>
 
