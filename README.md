@@ -55,6 +55,6 @@
   </h4>
   
 # Licença
-<p>This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©</p>
-</div>
+Este software está sob licença [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
+
 
