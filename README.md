@@ -10,11 +10,6 @@
 </div>
 
 ## Conteúdos
-
- <h4 align="center"> 
-	🚧  UnBoard em construção...  🚧
-  </h4>
-  
 <p align="center">	
  <a href="#-O que é O UnBoard?">Objetivo</a> •
  <a href="#-Funcionalidades">Funcionalidades</a> •
@@ -22,6 +17,11 @@
  <a href="#-Contribuidores">Contribuidores</a> •
  <a href="#-Licença">Licença</a>
 </p>
+
+ <h4 align="center"> 
+	🚧  UnBoard em construção...  🚧
+  </h4>
+  
 
 ## 🕊 O que é o UnBoard?
   O UnBoard é um projeto que tem por objetivo a apresentação de dados estatísticos dos aprovados pelo vestibular anual da Universidade de Brasília (UnB), por meio de gráficos que informam a quantidade de aprovados, a demanda de vagas, as vagas reservadas e outras informações de todos os cursos da UnB. Os dados coletados estarão em uma página Web de maneira que facilite a visualização e compreensão do usuário, por meio de dashboards que podem ser filtrados de acordo com o Campus desejado.
