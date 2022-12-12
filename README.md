@@ -15,6 +15,7 @@
  <a href="#-Funcionalidades">Funcionalidades</a> •
  <a href="#-Tecnologias">Tecnologias</a> •
  <a href="#-Contribuidores">Contribuidores</a> •
+ <a href="#-Como contribuir para o projeto?">Como contribuir</a> •
  <a href="#-Licença">Licença</a>
 </p>
  <h4 align="center"> 
