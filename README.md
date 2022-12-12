@@ -32,8 +32,7 @@
 </p>
 
 
-<div>
-  <h3>Contribuidores</h3>
+ # Contribuidores
   
   <a href="https://github.com/Raphides">Raphael Silva</a><br></br>
   <a href="https://github.com/JoaoBarreto03">João Barreto</a><br></br>
@@ -42,7 +41,6 @@
   <a href="https://github.com/guilhermeKishimoto">Guilherme Kishimoto</a><br></br>
   <a href="https://github.com/frmiza">Franciso Mizael</a><br></br>
   
-</div>
 <div>
   <h3>©Licença</h3>
 objetivo
