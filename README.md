@@ -43,16 +43,16 @@
 
 ## :hammer: Guia de Instalação
 ### Dependências 
-Para executar o projeto corretamente é necessário ter instalado em seu computador o [Python](https://www.python.org/downloads/),[SQLite](https://www.sqlite.org/download.html) e o [NodeJs](https://nodejs.org/en/download/).
+Para executar o projeto corretamente é necessário ter instalado em seu computador o [Python](https://www.python.org/downloads/), [SQLite](https://www.sqlite.org/download.html) e o [NodeJs](https://nodejs.org/en/download/).
 ### Instalação e execução 
 * Executando via código fonte
-'''
+```
 git clone https://github.com/fga-eps-mds/2022-2-UnBoard.git
-'''
+```
 * Pacote Python
-'''
+```
 pip install UnBoard
-'''
+```
 
  ## 👨‍💻 Contribuidores
   
