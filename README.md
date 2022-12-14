@@ -58,7 +58,7 @@
 4. Envie as suas alterações: `git push origin my-feature`
 > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
 
-## Licença ©
+## Licenças ©
 Este software está sob licença [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
 
 
