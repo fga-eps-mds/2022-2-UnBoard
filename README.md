@@ -76,7 +76,7 @@ pip install UnBoard
 * [Slides](https://www.canva.com/design/DAFUx7CI8F0/0lUQq1yV4mwxzRan_aAyCg/view?utm_content=DAFUx7CI8F0&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
 * [Video](https://youtu.be/MsAPZoRLm2M)
 
-## Licenças ©
+## Licença ©
 Este software está sob licença [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
 
 
