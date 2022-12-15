@@ -12,6 +12,8 @@ O protótipo de alta fidelidade é criado utilizando materiais que são esperado
 
 ### Dashboard
 ![image](https://user-images.githubusercontent.com/87884030/207746920-e6e358ce-32e1-4aef-b1a6-00131c6aaa21.png)
+![image](https://user-images.githubusercontent.com/87884030/207751897-6ed497d6-f958-451f-aa07-67631acb3079.png)
+
 
 ### Contato
 ![image](https://user-images.githubusercontent.com/87884030/207746791-1594570f-ed33-4af8-921f-fefb29e1d067.png)
