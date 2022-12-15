@@ -71,6 +71,11 @@ pip install UnBoard
 4. Envie as suas alterações: `git push origin my-feature`
 > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
 
+## 🏷 Releases
+### Release 1
+* [Slides](https://www.canva.com/design/DAFUx7CI8F0/0lUQq1yV4mwxzRan_aAyCg/viewutm_content=DAFUx7CI8F0&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
+* [Video](https://youtu.be/MsAPZoRLm2M)
+
 ## Licenças ©
 Este software está sob licença [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) ©
 
