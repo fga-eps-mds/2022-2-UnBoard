@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
     <title>UnBoard</title>
-    <link rel="stylesheet" type="text/css" href="style.css"    
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header class="cabecalho">
         <img class="imagem-cabecalho" src="imagens/logo-sem-fundo.png" width="70" height="50" alt="Logo">
         <nav class="menu-cabecalho">
-            <a class="item-menu-cabecalho">Projeto</a>
-            <a class="item-menu-cabecalho">Protótipo</a>
-            <a class="item-menu-cabecalho">Equipe</a>
+            <a href="#projeto" class="item-menu-cabecalho">Projeto</a>
+            <a href="#prototipo" class="item-menu-cabecalho">Protótipo</a>
+            <a href="#equipe" class="item-menu-cabecalho">Equipe</a>
         </nav>
     </header> 
 
     <main class="conteudo">
-        <section class="principal-conteudo">
+        <section class="principal-conteudo" id="home">
             <div class="texto-principal-conteudo">
                 <h1 class="titulo-texto-principal-conteudo">UnBoard</h1>
                 <h2 class="subtitulo-texto-principal-conteudo">Informações sobre ingresso na Universidade de Brasília - UnB</h2>
@@ -28,7 +28,7 @@
             <img class="imagem-principal-conteudo" src="imagens/grafico-com-chapeu.png" alt="Grafico com chapeu">
         </section>
             
-        <section class="secundario-conteudo">
+        <section class="secundario-conteudo" id="projeto">
             <h3 class="titulo-secundario-conteudo">Projeto</h3>
             <p class="paragrafo-secundario-conteudo">O UnBoard é um projeto Open Source que tem por objetivo a apresentação de dados 
                 estatísticos dos aprovados pelo vestibular anual da Universidade de Brasília (UnB),
@@ -38,7 +38,7 @@
                  por meio de dashboards que podem ser filtrados de acordo com o Campus desejado.</p>
         </section>
 
-        <section class="terceiro-conteudo">
+        <section class="terceiro-conteudo" id="prototipo">
             <h3 class="titulo-terceiro-conteudo">Protótipo</h3>
             <iframe class="figma-terceiro-conteudo" style="border: 1px solid rgba(0, 0, 0, 0.1); 
                 margin-left: auto; 
@@ -49,11 +49,38 @@
             </iframe> 
         </section>
 
-        <section class="quarto-conteudo">
+        <section class="quarto-conteudo" id="equipe">
             <h3 class="titulo-quarto-conteudo">Equipe</h3>
             <p class="paragrafo-quarto-conteudo">Somos um grupo da UnB cursando Engenharia de Software no campus Gama. 
                 Através da disciplina Métodos de Desenvolvimento de Software, 
-                nós nos juntamos para realizar este projeto num período de cerca de 4 meses.</p>
+                nós nos juntamos para realizar este projeto num período de cerca de 4 meses.
+            </p>
+            <div class="tabela-foto">
+                <figure>
+                    <img class="imagem-foto" src="../assets/breno.jpg" alt="Breno Yuri Barbosa Gomes">
+                    <figcaption class="nomes">Breno Yuri Barbosa Gomes</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagem-foto" src="../assets/danilo.jpeg" alt="Danilo Carvalho Antunes">
+                    <figcaption class="nomes">Danilo Carvalho Antunes</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagem-foto" src="../assets/mizael.jpg" alt="Francisco Mizael Santos da Silva">
+                    <figcaption class="nomes">Francisco Mizael Santos da Silva</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagem-foto" src="../assets/guilherme.jpeg" alt="Guilherme Keyti Cabral Kishimoto">
+                    <figcaption class="nomes">Guilherme Keyti Cabral Kishimoto</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagem-foto" src="../assets/joao.jpeg" alt="João Manoel Barreto Neto">
+                    <figcaption class="nomes">João Manoel Barreto Neto</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagem-foto" src="../assets/Raphael (cópia).png" alt="Raphael Mendes da Silva">
+                    <figcaption class="nomes">Raphael Mendes da Silva</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 </body>
