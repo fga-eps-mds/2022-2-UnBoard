@@ -8,14 +8,18 @@
 
 
 .App{
-  font-family: fantasy;
-  height: 1800px;
+  font-family: cursive;
+  height: auto;
+  min-height: 980px;
   background-color: #003366;
   font-size: 60px;
   color: white;
   align-items: center;
 }
-
+.copy{
+  font-size: 40px;
+  margin-top: 220px;
+}
 .App > h1{
   margin-left: 220px;
 }

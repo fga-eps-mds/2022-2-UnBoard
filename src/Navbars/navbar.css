@@ -13,18 +13,12 @@
     color: rgb(255, 255, 255);
 }
 
-.Navbar > .nav-name{
-    margin: -1400px;
-    color: rgb(0, 255, 13);
-    font-size: 30px;
-}
 
 .Navbar > .nav-items-a > a {
     color:rgb(25, 0, 248);
     font-size: 20px;
     text-decoration: none;
-    margin: 15px;
-    margin-left: -10px;
+    margin-left: -300px;
     position: relative;
     opacity: 0.9;
     
@@ -34,8 +28,7 @@
     color:rgb(25, 0, 248);
     font-size: 20px;
     text-decoration: none;
-    margin: 15px;
-    margin-left: -400px;
+    margin-left: -570px;
     position: relative;
     opacity: 0.9;
     
@@ -44,9 +37,8 @@
     color:rgb(25, 0, 248);
     font-size: 20px;
     text-decoration: none;
-    margin: 15px;
-    margin-left: -100px;
-    position: relative;
+    margin-left: -900px;
+ 
     opacity: 0.9;
     
 }
