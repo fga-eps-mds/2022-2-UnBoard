@@ -1,7 +1,7 @@
 .Navbar {
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     background: rgb(207, 207, 207);
 }
@@ -18,7 +18,7 @@
     color:rgb(25, 0, 248);
     font-size: 20px;
     text-decoration: none;
-    margin-left: -300px;
+    margin-left: 50px;
     position: relative;
     opacity: 0.9;
     
@@ -28,7 +28,7 @@
     color:rgb(25, 0, 248);
     font-size: 20px;
     text-decoration: none;
-    margin-left: -570px;
+    margin-left: 60px;
     position: relative;
     opacity: 0.9;
     
@@ -37,10 +37,18 @@
     color:rgb(25, 0, 248);
     font-size: 20px;
     text-decoration: none;
-    margin-left: -900px;
+    margin-left: 70px;
  
     opacity: 0.9;
     
+}
+.Navbar > .nav-items-d > a{
+    color:rgb(25, 0, 248);
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 80px;
+    position: relative;
+    opacity: 0.9;
 }
 
 .Navbar > .navbar-brand > img{

@@ -18,11 +18,9 @@ class Home extends React.Component{
                <h3>Informações sobre o ingresso na Universidade de Brasília</h3>
                <br></br>
                <div className="copy">
-
-                <center>
-                    <h6>Squad6 2023 © </h6>
-                </center>
-
+                    <center>
+                        <h6>Squad6 2023 © </h6>
+                    </center>
                </div>
             </div>
 

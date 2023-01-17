@@ -8,13 +8,16 @@ const NavBar = () => {
             </a>
             
             <div className="nav-items-a">
-                <a href="/Dashboards">Dashboard</a>
+                <a href="/home">Home</a>
             </div>
             <div className="nav-items-b">
-                <a href="/home">Home</a>
+                <a href="/Dashboards">Dashboard</a>
             </div>
             <div className="nav-items-c">
                 <a href="/sobre">Sobre nós</a>
+            </div>
+            <div className="nav-items-d">
+                <a href="/contact">Contato</a>
             </div>
             <div className="nav-toggle">
                 <div className="bar"></div>
