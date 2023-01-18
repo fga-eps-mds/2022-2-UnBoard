@@ -38,7 +38,7 @@ df = pd.DataFrame({
 })
 
 fig = px.bar(df, x="COTAS", y="Quantidade", color="Legenda", barmode="group")
-fig.update_yaxes(autorange=True)
+fig.update_layout(yaxis_type='linear')
 
 app.layout = html.Div(children=[
     html.H1(children='Grafico cotas'),
