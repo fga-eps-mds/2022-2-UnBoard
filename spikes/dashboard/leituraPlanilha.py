@@ -1,9 +1,6 @@
 import pandas as pd
-
-df = pd.read_excel("../../pdfs/VESTUNB_23.xlsx")
-
-Nome = "Arquitetura e Urbanismo (Bacharelado)" #nome que deseja pesquisar
-Vazia = "Unnamed: 0" #nome da coluna vazia
+import buscarCurso
+from buscarCurso import *
 
 #variaveis globais diurno
 global vagas_cotas_negros_diurno
