@@ -20,7 +20,7 @@ class Courses_repository:
 
         for campus in self.CAMPUS_LIST:
             connection = sql.connect(
-                f"./Documentos/2022-2-Squad06/databases/vest_23/{campus}.db"
+                f"./databases/vest_23/{campus}.db"
             )
             cursor = connection.cursor()
             tmp = list()
