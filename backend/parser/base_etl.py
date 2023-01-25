@@ -36,9 +36,13 @@ class BaseETL(abc.ABC):
             self.extract()
         return self._data_output
 
-    def __init__(self, input: str, output: str, create_path: bool = True) -> None:
+    def __init__(self, input: str, output: str, create_path: bool = True):
         """
-        
+        Instancia um objeto ETL
+       
+        :param input: string contendo o diretorio dos dados de entrada
+        :param output: string contendo o diretorio dos dados de saida
+        :param create_path: flag que indica se um diretorio deve ser criado
         """
         self.path_input = Path(input)
         self.path_output = Path(output)
