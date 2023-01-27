@@ -42,11 +42,16 @@ df = pd.DataFrame({
 
 fig = px.bar(df, x="TIPO", y="Quantidade", color="Legenda", barmode="group")
 #fig.update_layout(yaxis_type='linear')
-fig.update_layout(yaxis_type='linear', yaxis_range=[0, 15])
+#fig.update_layout(yaxis_type='linear', yaxis_range=[0, 15])
+fig.update_layout(yaxis_type='linear', yaxis_range=[0, 15], 
+                  annotations=[dict(x=i, y=j, text=str(j),font=dict(color='black')) for i,j in zip(df['TIPO'], df['Quantidade'])],
+                  xaxis=dict(title='TIPO'), yaxis=dict(title='Quantidade'))
+
 
 app.layout = html.Div(children=[
     html.H1(children='Grafico vagas e inscritos'),
     html.H2(children=Nome),
+    html.Div(children='Clique em Autoscale para ver o grafico completo', style={'textAlign': 'right'}),
 
     dcc.Graph(
         id='example-graph',
