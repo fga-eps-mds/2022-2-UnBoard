@@ -1,9 +1,8 @@
 import pandas as pd
 
-df = pd.read_excel("../../pdfs/VESTUNB_23.xlsx")
+df = pd.read_excel("../../pdfs/VESTUNB_15.xlsx")
 
 global Nome
 global Vazia
 
-Nome = "Direito (Bacharelado)" #nome que deseja pesquisar
-Vazia = "Unnamed: 0" #nome da coluna vazia
+Nome = "Direito (***)" #nome que deseja pesquisar
