@@ -64,4 +64,24 @@ if 100 in df.columns:
     vagas_universais_diurno = df.at[indice_linha_curso_diurno, 17]
     inscritos_universais_diurno = df.at[indice_linha_curso_diurno, 18]
 
- 
+else:
+    linha_diurno = df.loc[(df[1] == Nome)]
+    indice_linha_curso_diurno = linha_diurno.index[0]
+    
+    vagas_cotas_negros_diurno = df.at[indice_linha_curso_diurno, 2]
+    inscritos_cotas_negros_diurno = df.at[indice_linha_curso_diurno, 3]
+    
+    vagas_cotas_escolaPublica_negros_rendaInf_diurno = df.at[indice_linha_curso_diurno, 5]
+    inscritos_cotas_escolaPublica_negros_rendaInf_diurno = df.at[indice_linha_curso_diurno, 6]
+
+    vagas_cotas_escolaPublica_negros_rendaSup_diurno = df.at[indice_linha_curso_diurno, 11]
+    inscritos_cotas_escolaPublica_negros_rendaSup_diurno = df.at[indice_linha_curso_diurno, 12]
+
+    vagas_cotas_escolaPublica_rendaInf_diurno = df.at[indice_linha_curso_diurno, 8]
+    inscritos_cotas_escolaPublica_rendaInf_diurno = df.at[indice_linha_curso_diurno, 9]
+
+    vagas_cotas_escolaPublica_rendaSup_diurno = df.at[indice_linha_curso_diurno, 14]
+    inscritos_cotas_escolaPublica_rendaSup_diurno = df.at[indice_linha_curso_diurno, 15]
+
+    vagas_universais_diurno = df.at[indice_linha_curso_diurno, 17]
+    inscritos_universais_diurno = df.at[indice_linha_curso_diurno, 18]
