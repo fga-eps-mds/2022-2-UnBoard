@@ -14,15 +14,20 @@ const SideBar = () => {
                 2022
             </a>
             <a className="menu-item" href="/dashboards">
-                2021
-            </a>
-            <a className="menu-item" href="/dashboards">
-                2020
-            </a>
-            <a className="menu-item" href="/dashboards">
                 2019
             </a>
-
+            <a className="menu-item" href="/dashboards">
+                2018
+            </a>
+            <a className="menu-item" href="/dashboards">
+                2017
+            </a>
+            <a className="menu-item" href="/dashboards">
+                2016
+            </a>
+            <a className="menu-item" href="/dashboards">
+                2015
+            </a>
     </Menu>
 
 
