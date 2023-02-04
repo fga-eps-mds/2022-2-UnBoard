@@ -29,6 +29,13 @@ class Courses_list(list):
                 result[0].append((day_course, "Diurno"),)
             for night_course in courses[(sep + 2): (len(courses) - 1)]:
                 result[1].append((night_course, "Noturno"),)
+        elif year == 19:
+            courses = list(pd.read_excel(f"./databases/VESTUNB_{year}.xlsx").get("Unnamed: 0")[11:])
+            sep = courses.index("Total Diurno")
+            for day_course in courses[:sep]:
+                result[0].append((day_course, "Diurno"),)
+            for night_course in courses[(sep + 2): (len(courses) - 1)]:
+                result[1].append((night_course, "Noturno"),)
         return result
 
     def __merge(self, list1: list, list2: list) -> list:
