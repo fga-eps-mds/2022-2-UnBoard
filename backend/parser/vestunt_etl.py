@@ -1,6 +1,7 @@
 import abc
 import typing
 from pathlib import Path
+from backend.parser.vest.spiders.pdf_spider import PdfSpider
 from parser.base_etl import BaseETL
 
 
@@ -25,8 +26,9 @@ class VestUnbETL(BaseETL):
         super().__init__(input, output, create_path)
 
     def links_vestibular(self) -> typing.Dict[str, str]:
-        pass
-
+        spider = PdfSpider()
+        return spider.get_links()
+    
     @abc.abstractmethod
     def extract(self) -> None:
         """
