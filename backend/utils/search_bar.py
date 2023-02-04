@@ -1,51 +1,35 @@
-import sqlite3 as sql
+import pandas as pd
 import json
 
-# Instructions
-# Search Course is where everything is implemented, use it!
 
 
-class Courses_repository:
-    def __init__(self, database_folder: str) -> None:
-        self.CAMPUS_LIST = (
-            "darcy-diurno",
-            "darcy-noturno",
-            "fce",
-            "fga",
-            "fup-diurno",
-            "fup-noturno",
-        )
-        self.courses_by_campus = dict.fromkeys(self.CAMPUS_LIST)
-        self.ordered_courses = list()
-
-        for campus in self.CAMPUS_LIST:
-            connection = sql.connect(
-                f"{database_folder}/vest_23/{campus}.db"
-            )
-            cursor = connection.cursor()
-            tmp = list()
-            tmp.append(
-                cursor.execute(
-                    """--sql
-                SELECT Cursos
-                FROM N000
-                WHERE Cursos NOT LIKE 'Total%'
-                ORDER BY Cursos;
-            """
-                ).fetchall()
-            )
-            self.courses_by_campus[campus] = list()
-            for m in tmp:
-                for n in m:
-                    self.courses_by_campus[campus].append((n[0], campus))
-            connection.close()
-
-        self.ordered_courses = self.courses_by_campus[self.CAMPUS_LIST[0]]
-
-        for j in self.CAMPUS_LIST[1:]:
-            self.ordered_courses = self.__merge(
-                self.ordered_courses, self.courses_by_campus[j]
-            )
+class Courses_list(list):
+    def __init__(self, year: int) -> None:
+        super()
+        self.year_edition = year
+        raw_list = self.__read_source_table(self.year_edition)
+        self.diurnal :list = raw_list[0]
+        self.nocturnal : list = raw_list[1]
+        self.ordered_list: list = self.__merge(self.diurnal, self.nocturnal)
+        
+    def __read_source_table(self, year: int):
+        result = ([], [])
+        # result = (diurnal list, nocturnal list)
+        if year == 23:
+            courses = list(pd.read_excel(f"./pdfs/VESTUNB_{year}.xlsx").get(0)[7:])
+            sep = courses.index("Total Diurno")
+            for day_course in courses[:sep]:
+                result[0].append((day_course, "Diurno"),)
+            for night_course in courses[(sep + 3) : (len(courses) - 1)]:
+                result[1].append((night_course, "Noturno"),)
+        elif year == 22:
+            courses = list(pd.read_excel(f"./pdfs/VESTUNB_{year}.xlsx").get("Unnamed: 0")[12:])
+            sep = courses.index("Total Diurno")
+            for day_course in courses[:sep]:
+                result[0].append((day_course, "Diurno"),)
+            for night_course in courses[(sep + 2): (len(courses) - 1)]:
+                result[1].append((night_course, "Noturno"),)
+        return result
 
     def __merge(self, list1: list, list2: list) -> list:
         """Merges two ordered lists preserving their order.
@@ -82,11 +66,20 @@ class Courses_repository:
                     return result
 
     def search_course(self, exp: str, jsonfy=False) -> list:
+        """Search courses based on ordened_list property.
+
+        Args:
+            exp (str): an expression, it can be a letter, word or even a whole text.
+            jsonfy (bool, optional): if true, the return value will be a json. Defaults to False, which returns a dictionary.
+
+        Returns:
+            list: returns the components with matching names in json or dict format.
+        """
         matches = list()
-        for k in range(len(self.ordered_courses)):
-            one_match = self.ordered_courses[k][0].find(exp)
+        for k in range(len(self.ordered_list)):
+            one_match = self.ordered_list[k][0].find(exp)
             if one_match != -1:
-                matches.append(self.ordered_courses[k])
+                matches.append(self.ordered_list[k])
         if jsonfy:
             file = open("./search_result.json", "wt")
             return json.dump(matches, file)
@@ -94,5 +87,6 @@ class Courses_repository:
             return matches
 
 if __name__ == '__main__':
-    o = Courses_repository("./databases/")
-    print(len(o.search_course("")))
+    o = Courses_list(23)
+    print(o.ordered_list)
+    print(o.search_course("Adm"))
