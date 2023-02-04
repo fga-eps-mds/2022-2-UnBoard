@@ -1,76 +1,55 @@
 import pandas as pd
 import json
 
-
-
 class Courses_list(list):
     def __init__(self, year: int) -> None:
-        super()
+        super().__init__()
         self.year_edition = year
         raw_list = self.__read_source_table(self.year_edition)
         self.diurnal :list = raw_list[0]
-        self.nocturnal : list = raw_list[1]
-        self.ordered_list: list = self.__merge(self.diurnal, self.nocturnal)
+        self.ordered_list: list = self.diurnal
         
     def __read_source_table(self, year: int):
-        result = ([], [])
+        result = []
         # result = (diurnal list, nocturnal list)
         if year == 23:
-            courses = list(pd.read_excel(f"./databases/VESTUNB_{year}.xlsx").get(0)[7:])
-            sep = courses.index("Total Diurno")
+            courses = list(pd.read_excel(f"databases/VESTUNB_{year}.xlsx").get(1)[12:])
+            #sep = courses.index("Total Diurno")
+            sep = 74
             for day_course in courses[:sep]:
-                result[0].append((day_course, "Diurno"),)
-            for night_course in courses[(sep + 3) : (len(courses) - 1)]:
-                result[1].append((night_course, "Noturno"),)
+                result.append((day_course, "Diurno"),)
         elif year == 22:
-            courses = list(pd.read_excel(f"./databases/VESTUNB_{year}.xlsx").get("Unnamed: 0")[12:])
-            sep = courses.index("Total Diurno")
+            courses = list(pd.read_excel(f"databases/VESTUNB_{year}.xlsx").get(1)[12:])
+           # sep = courses.index("Total Diurno")
+            sep = 73
             for day_course in courses[:sep]:
-                result[0].append((day_course, "Diurno"),)
-            for night_course in courses[(sep + 2): (len(courses) - 1)]:
-                result[1].append((night_course, "Noturno"),)
+                result.append((day_course, "Diurno"),)
         elif year == 19:
-            courses = list(pd.read_excel(f"./databases/VESTUNB_{year}.xlsx").get("Unnamed: 0")[11:])
-            sep = courses.index("Total Diurno")
+            courses = list(pd.read_excel(f"../../databases/VESTUNB_{year}.xlsx").get(1)[12:])
+            #sep = courses.index("Total Diurno")
             for day_course in courses[:sep]:
-                result[0].append((day_course, "Diurno"),)
-            for night_course in courses[(sep + 2): (len(courses) - 1)]:
-                result[1].append((night_course, "Noturno"),)
+                result.append((day_course, "Diurno"),)
+        elif year == 18:
+            courses = list(pd.read_excel(f"../../databases/VESTUNB_{year}.xlsx").get(1)[10:])
+           # sep = courses.index("Total Diurno")
+            for day_course in courses[:sep]:
+                result.append((day_course, "Diurno"),)
+        elif year == 17:
+            courses = list(pd.read_excel(f"../../databases/VESTUNB_{year}.xlsx").get(1)[10:])
+            #sep = courses.index("Total Diurno")
+            for day_course in courses[:sep]:
+                result.append((day_course, "Diurno"),)
+        elif year == 16:
+            courses = list(pd.read_excel(f"../../databases/VESTUNB_{year}.xlsx").get(1)[19:])
+            #sep = courses.index("Total Diurno")
+            for day_course in courses[:sep]:
+                result.append((day_course, "Diurno"),)
+        elif year == 15:
+            courses = list(pd.read_excel(f"../../databases/VESTUNB_{year}.xlsx").get(1)[10:])
+            #sep = courses.index("Total Diurno")
+            for day_course in courses[:sep]:
+                result.append((day_course, "Diurno"),)
         return result
-
-    def __merge(self, list1: list, list2: list) -> list:
-        """Merges two ordered lists preserving their order.
-
-        Args:
-            list1 (list): ordered list.
-            list2 (list): ordered list.
-
-        Returns:
-            list: returns a new list with the merge of both argument's lists.
-        """
-        result = list()
-        pointer1, pointer2, max1, max2 = 0, 0, False, False
-        try:
-            while True:
-                if list1[pointer1][0] <= list2[pointer2][0]:
-                    result.append(list1[pointer1])
-                    pointer1 += 1
-
-                elif list1[pointer1][0] > list2[pointer2][0]:
-                    result.append(list2[pointer2])
-                    pointer2 += 1
-        except IndexError:
-            try:
-                while True:
-                    result.append(list1[pointer1])
-                    pointer1 += 1
-            except IndexError:
-                try:
-                    while True:
-                        result.append(list2[pointer2])
-                        pointer2 += 1
-                except IndexError:
-                    return result
 
     def search_course(self, exp: str, jsonfy=False) -> list:
         """Search courses based on ordened_list property.
@@ -96,4 +75,7 @@ class Courses_list(list):
 if __name__ == '__main__':
     o = Courses_list(23)
     print(o.ordered_list)
-    print(o.search_course("Adm"))
+
+if __name__ == '__main__':
+    o = Courses_list(22)
+    print(o.ordered_list)
