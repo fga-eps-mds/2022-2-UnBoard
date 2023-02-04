@@ -37,6 +37,8 @@ class VestSpider:
             return links
 
     def get_urls(self) -> typing.List[str]:
-        self.encerrado = self.vest_links("/vestibulares/encerrado")
+        self.encerrado = self.vest_links(
+            "/vestibulares/encerrado")
         self.andamento = self.vest_links("/vestibulares")
-        return list(self.encerrado + self.andamento)
+        return list(self.encerrado +
+                    self.andamento)

@@ -1,6 +1,5 @@
 import abc
 import typing
-from pathlib import Path
 from backend.parser.vest.spiders.pdf_spider import PdfSpider
 from parser.base_etl import BaseETL
 
@@ -10,10 +9,12 @@ class VestUnbETL(BaseETL):
     Estrutura que manipula arquivos referente aos dados
     """
 
-    URL: str = "https://www.cebraspe.org.br/vestibulares"
-    URL_ENC: str = f"{URL}/encerrado"
-
-    def __init__(self, input: str, output: str, create_path: bool = True, status: bool = True):
+    def __init__(
+        self, input: str,
+            output: str,
+            create_path: bool = True,
+            status: bool = True
+    ):
         """
         Instancia um objeto ETL
         :param input: string contendo o diretorio dos dados de entrada

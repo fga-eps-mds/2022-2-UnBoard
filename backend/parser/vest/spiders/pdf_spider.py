@@ -30,7 +30,7 @@ class PdfSpider(VestSpider):
                         tag.pop(0)
                     pdfs.append(tag[0].get_attribute("href"))
             except Exception as exc:
-                print('{}: {}'.format(type(exc).__name__, exc))
+                print("{}: {}".format(type(exc).__name__, exc))
 
         driver.quit()
         return pdfs
@@ -38,6 +38,6 @@ class PdfSpider(VestSpider):
     def get_links(self) -> typing.Dict[str, str]:
         urls = self.get_urls()
         links = self.get_pdf(urls)
-        return dict(zip(
-                    [re.search("[^/]+$", url).group() for url in urls], links
-                    ))
+        return dict(zip([re.search("[^/]+$",
+                                   url).group() for url in urls], links)
+                    )

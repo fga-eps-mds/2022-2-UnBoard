@@ -8,6 +8,7 @@ class BaseETL(abc.ABC):
     """
     Estrutura como qualquer objeto ETL deve funcionar
     """
+
     path_input: Path
     path_output: Path
     _data_input: typing.Dict[str, pd.DataFrame]
