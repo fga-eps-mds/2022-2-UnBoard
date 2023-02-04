@@ -39,5 +39,5 @@ class PdfSpider(VestSpider):
         urls = self.get_urls()
         links = self.get_pdf(urls)
         return dict(zip(
-                    [re.search("[^/]+$", url).group() for url in urls], links
+                    [f'{re.search("[^/]+$", url).group()}.pdf' for url in urls], links
                     ))
