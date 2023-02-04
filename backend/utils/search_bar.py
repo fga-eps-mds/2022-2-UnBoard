@@ -16,14 +16,14 @@ class Courses_list(list):
         result = ([], [])
         # result = (diurnal list, nocturnal list)
         if year == 23:
-            courses = list(pd.read_excel(f"./pdfs/VESTUNB_{year}.xlsx").get(0)[7:])
+            courses = list(pd.read_excel(f"./databases/VESTUNB_{year}.xlsx").get(0)[7:])
             sep = courses.index("Total Diurno")
             for day_course in courses[:sep]:
                 result[0].append((day_course, "Diurno"),)
             for night_course in courses[(sep + 3) : (len(courses) - 1)]:
                 result[1].append((night_course, "Noturno"),)
         elif year == 22:
-            courses = list(pd.read_excel(f"./pdfs/VESTUNB_{year}.xlsx").get("Unnamed: 0")[12:])
+            courses = list(pd.read_excel(f"./databases/VESTUNB_{year}.xlsx").get("Unnamed: 0")[12:])
             sep = courses.index("Total Diurno")
             for day_course in courses[:sep]:
                 result[0].append((day_course, "Diurno"),)
