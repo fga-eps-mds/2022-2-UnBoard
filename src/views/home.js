@@ -13,7 +13,7 @@ class Home extends React.Component{
                 <br></br><br></br><br></br><br></br>
                 <h1>UnBoard</h1>
                 <div className="box">
-                    <img width="800" height="600" src="https://raw.githubusercontent.com/fga-eps-mds/2022-2-UnBoard/frontend/Imagens/Design%20sem%20nome.png"/>
+                    <img width="600" height="600" src="https://raw.githubusercontent.com/fga-eps-mds/2022-2-UnBoard/frontend/Imagens/Design%20sem%20nome.png"/>
                 </div>
                <h3>Informações sobre o ingresso na Universidade de Brasília</h3>
                <br></br>

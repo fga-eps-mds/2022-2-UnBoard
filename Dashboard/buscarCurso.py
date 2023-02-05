@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_excel("../../pdfs/VESTUNB_15.xlsx")
+df = pd.read_excel("../databases/VESTUNB_15.xlsx")
 
 global Nome
 global Vazia
