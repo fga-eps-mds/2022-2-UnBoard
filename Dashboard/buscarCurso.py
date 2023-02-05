@@ -1,8 +1,10 @@
 import pandas as pd
 
-df = pd.read_excel("../databases/VESTUNB_15.xlsx")
+year = 16
+
+df = pd.read_excel(f"../databases/VESTUNB_{year}.xlsx")
 
 global Nome
 global Vazia
 
-Nome = "Direito (***)" #nome que deseja pesquisar
+Nome = "Direito (Bacharelado)" #nome que deseja pesquisar
