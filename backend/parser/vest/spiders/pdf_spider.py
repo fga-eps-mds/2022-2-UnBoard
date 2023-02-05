@@ -5,7 +5,8 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from base_spider import VestSpider
+
+from .base_spider import VestSpider
 
 
 class PdfSpider(VestSpider):
@@ -39,5 +40,5 @@ class PdfSpider(VestSpider):
         urls = self.get_urls()
         links = self.get_pdf(urls)
         return dict(zip(
-                    [f'{re.search("[^/]+$", url).group()}.pdf' for url in urls], links
-                    ))
+            [f'{re.search("[^/]+$", url).group()}.pdf' for url in urls], links)
+            )

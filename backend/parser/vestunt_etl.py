@@ -1,9 +1,9 @@
 import abc
 import typing
 import os
-from pathlib import Path
-from backend.parser.vest.spiders.pdf_spider import PdfSpider
-from parser.base_etl import BaseETL
+from vest.spiders.pdf_spider import PdfSpider
+from base_etl import BaseETL
+from utils.web import dowload_dados_web
 
 
 class VestUnbETL(BaseETL):
@@ -29,15 +29,17 @@ class VestUnbETL(BaseETL):
     def links_vestibular(self) -> typing.Dict[str, str]:
         spider = PdfSpider()
         return spider.get_links()
-    
+
     def pdfs_para_baixar(self) -> typing.Dict[str, str]:
         pdfs = self.links_vestibular()
         baixados = os.listdir(str(self.path_input))
         return {arq: link for arq, link in pdfs.items() if arq not in baixados}
-    
+
     def download_pdfs(self) -> None:
-        for arq, link in self.pdfs_para_baixar():
-            caminho_aqr = self.path_output / arq
+        pdfs_para_baixar = self.pdfs_para_baixar()
+        for arq in pdfs_para_baixar:
+            caminho_arq = self.path_output / arq
+            dowload_dados_web(caminho_arq, pdfs_para_baixar[arq])
 
     @abc.abstractmethod
     def extract(self) -> None:
@@ -53,19 +55,3 @@ class VestUnbETL(BaseETL):
         de saida de interesse
         """
         pass
-
-    @abc.abstractmethod
-    def load(self) -> None:
-        """
-        exporta os dados para um csv
-        """
-        for arq, df in self.data_output.items():
-            df.to_parquet(self.path_output / arq, index=False)
-
-    def pipeline(self) -> None:
-        """
-        executa o pipeline completo
-        """
-        self.extract()
-        self.transform()
-        self.load()
