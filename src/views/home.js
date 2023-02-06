@@ -1,34 +1,26 @@
 import React from "react";
 import "../App.css";
 
-
-
-
-class Home extends React.Component{
-    render(){
-
-        return(
-            <>
-            <div className="App">
-                <br></br><br></br><br></br><br></br>
-                <h1>UnBoard</h1>
-                <div className="box">
-                    <img width="600" height="600" src="https://raw.githubusercontent.com/fga-eps-mds/2022-2-UnBoard/frontend/Imagens/Design%20sem%20nome.png"/>
-                </div>
-               <h3>Informações sobre o ingresso na Universidade de Brasília</h3>
-               <br></br>
-               <div className="copy">
-                    <center>
-                        <h6>Squad6 2023 © </h6>
-                    </center>
-               </div>
-            </div>
-
-            </>
-        )
-
-              
-    }
+class Home extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>UnBoard</h1>
+        <div className="box">
+          <img
+            style={{ width: "450px", height: "450px", marginTop: "20px" }}
+            src="https://raw.githubusercontent.com/fga-eps-mds/2022-2-UnBoard/frontend/Imagens/Design%20sem%20nome.png"
+          />
+        </div>
+        <h3>Informações sobre o ingresso na Universidade de Brasília</h3>
+        <div className="copy">
+          <center>
+            <h6>Squad6 2023 © </h6>
+          </center>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Home
+export default Home;

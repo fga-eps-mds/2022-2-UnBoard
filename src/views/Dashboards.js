@@ -1,40 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBar from "../Sidebars/sidebar";
 import "../App.css";
 
-class Dashboards extends React.Component {
-    handleYearSelection = (selectedYear) => {
-        this.setState({ year: selectedYear })
-    };
-    constructor(props) {
-        super(props);
-        this.state = {
-        year: 23,
-        };
-    }
-    
+const Dashboards = () => {
+  const [year, setYear] = useState(23);
 
-    render() {
-        return (
-            <>
-                <SideBar onYearSelection={this.handleYearSelection}/>
+  const handleYearSelection = (selectedYear) => {
+    setYear(selectedYear);
+  };
 
-                <div className="App">
-                    <div className="search">
-                        <h4>Pesquisar curso</h4>
-                        <input type="text" className="search-course" />
-                    </div>
-                    <center><h1>Vestibular 20{this.state.year} - UnB</h1></center><br></br><br></br>
-                    <div className="img-d">
-                        <center><iframe src="http://localhost:8050/" width="1500" height="700"></iframe></center>
-                    </div>
-                </div>
+  return (
+    <>
+      <SideBar onYearSelection={handleYearSelection} />
 
-            </>
-        )
+      <div className="App">
+        <div className="search">
+          <h4>Pesquisar curso</h4>
+          <input type="text" className="search-course" />
+        </div>
+        <center>
+          <h1>Vestibular 20{year} - UnB</h1>
+        </center>
+        <br />
+        <br />
+        <div className="img-d">
+            <center>
+                    <iframe 
+                    src="http://localhost:8050/" 
+                    width="1300" height="700" 
+                    style={{ 
+                    marginTop: "20px", 
+                    marginLeft: "50px", 
+                    position: "absolute",
+                    top: "200px", 
+                    left: "40px" 
+                    }} 
+                    />
+                </center>
+        </div>
 
+      </div>
+    </>
+  );
+};
 
-    }
-}
-
-export default Dashboards
+export default Dashboards;
