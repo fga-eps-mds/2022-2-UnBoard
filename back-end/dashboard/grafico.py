@@ -5,14 +5,14 @@ import dash
 
 app = Dash(__name__)
 year = 23
-df = pd.read_excel(f"../databases/VESTUNB_{year}.xlsx")
+df = pd.read_excel(f"../../databases/VESTUNB_{year}.xlsx")
 Nome = "Administração (Bacharelado)" #nome que deseja pesquisar
 ano = [2015, 2016, 2017, 2018, 2019, 2020, 2022, 2023]
 
 cursos = df.iloc[12:][1].tolist()
 
 def get_courses(year):
-    df = pd.read_excel(f"../databases/VESTUNB_{year}.xlsx")
+    df = pd.read_excel(f"../../databases/VESTUNB_{year}.xlsx")
     if (year == 15):
         cursos = df.iloc[9:][1].tolist()
         Nome = "Administração (***)"
@@ -45,7 +45,7 @@ def get_courses(year):
 cont = 0
 
 def get_courses(year):
-    df = pd.read_excel(f"../databases/VESTUNB_{year}.xlsx")
+    df = pd.read_excel(f"../../databases/VESTUNB_{year}.xlsx")
     if (year == 15):
         cursos = df.iloc[9:][1].tolist()
 
@@ -242,8 +242,6 @@ def update_output(value):
     Nome = value
     newdf = gerar_grafico(df)
     fig = px.bar(newdf, x="TIPO", y="Quantidade", color="Legenda", barmode="group")
-    #fig.update_layout(yaxis_type='linear')
-    #fig.update_layout(yaxis_type='linear', yaxis_range=[0, 15])
     fig.update_layout(yaxis_type='linear',  
                     annotations=[dict(x=i, y=j, text=str(j),font=dict(color='black')) for i,j in zip(newdf['TIPO'], newdf['Quantidade'])],
                     xaxis=dict(title='TIPO'), yaxis=dict(title='Quantidade'))
