@@ -11,16 +11,13 @@ const Dashboards = () => {
 
   return (
     <>
-      <SideBar onYearSelection={handleYearSelection} />
 
       <div className="App">
         <div className="search">
-          <h4>Pesquisar curso</h4>
-          <input type="text" className="search-course" />
+          <center>
+            <h2>Vestibular - UnB</h2>
+          </center>
         </div>
-        <center>
-          <h1>Vestibular 20{year} - UnB</h1>
-        </center>
         <br />
         <br />
         <div className="img-d">
