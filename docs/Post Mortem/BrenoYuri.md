@@ -1,0 +1,8 @@
+# Breno Yuri
+
+A matéria mais desafiadora que fiz na graduação até agora, demanda muito tempo e dedicação, o conhecimento por outro lado vai se desenvolvendo. Reconheço a importância de aprender sobre esse tema e como isso pode ser aplicado em futuros projetos.
+O projeto foi desafiador, exigindo muito tempo e dedicação, mas também foi uma ótima oportunidade para aprender sobre métodos ágeis. No entanto, eu enfrentei alguns desafios, como a dificuldade de me situar na matéria e de me adaptar ao grupo e ao cronograma. Isso prejudicou o projeto, pois eu demorei muito para entender como as coisas funcionavam, e sei que o meu grupo também lidou com essas questões, mas é uma lição importante para o futuro, pois eu sei que preciso estar mais preparado para lidar com esses desafios. Além disso, o eu sei da a necessidade de aperfeiçoar suas habilidades em métodos ágeis e estar sempre preparado para lidar com erros inerentes ao desenvolvimento de software. Aprender a trabalhar em equipe e a lidar com as diferenças é uma habilidade fundamental para o sucesso em qualquer área, e nesta matéria, tive a oportunidade de colocar isso em prática e melhorar ainda mais nessas habilidades.
+
+Aprender a gerenciar o tempo e a priorizar as tarefas, também foi um ponto importante na minha evolução como desenvolvedor, já que precisávamos entregar o projeto dentro do prazo estabelecido.
+
+Em resumo, a matéria MDS me trouxe muitos desafios e houveram muitos erros, mas também me proporcionou muitas conquistas, e tenho certeza que tudo o que aprendi será de grande valor para a minha vida profissional.
