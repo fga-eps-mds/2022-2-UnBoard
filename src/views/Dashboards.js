@@ -27,7 +27,7 @@ const Dashboards = () => {
                     width="1300" height="700" 
                     style={{ 
                     marginTop: "20px", 
-                    marginLeft: "50px", 
+                    marginLeft: "370px", 
                     position: "absolute",
                     top: "200px", 
                     left: "40px" 

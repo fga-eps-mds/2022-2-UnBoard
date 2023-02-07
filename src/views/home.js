@@ -5,10 +5,11 @@ class Home extends React.Component {
   render() {
     return (
       <div className="App">
+        <br></br><br></br><br></br><br></br>
         <h1>UnBoard</h1>
         <div className="box">
           <img
-            style={{ width: "450px", height: "450px", marginTop: "20px" }}
+            style={{ width: "500px", height: "500px", marginTop: "20px", marginLeft:"1200px" }}
             src="https://raw.githubusercontent.com/fga-eps-mds/2022-2-UnBoard/frontend/Imagens/Design%20sem%20nome.png"
           />
         </div>

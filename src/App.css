@@ -25,12 +25,12 @@
   font-size: 60px;
 }
 .App > h1{
-  margin-left: 90px;
+  margin-left: 320px;
   margin-bottom: -150px;
 }
 .App > h3{
   margin-top: -170px;
-  margin-left: 90px;
+  margin-left: 200px;
   font-size: 30px;
   color: white;
 }
@@ -59,7 +59,7 @@
 
 
 .box > img {
-    margin-left: 950px;
+    margin-left: 1100px;
     margin-top: -200px;
     display: flex;
    
