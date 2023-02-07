@@ -195,12 +195,18 @@ body {
     margin-right: 50px;
 }
 
-.quinto-conteudo > h5 {
+.post {
     border-top: 2px solid #ffffff;
     padding-top: 48px;
     font-family: 'Arvo', serif;
     font-weight: 700;
     font-size: 64px;
+    color: #ffffff;
+}
+.paragrafo {
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    font-size: 20px;
     color: #ffffff;
 }
 
