@@ -25,10 +25,11 @@
   font-size: 60px;
 }
 .App > h1{
-  margin-left: 220px;
+  margin-left: 90px;
+  margin-bottom: -150px;
 }
 .App > h3{
-  margin-top: -180px;
+  margin-top: -170px;
   margin-left: 90px;
   font-size: 30px;
   color: white;
@@ -159,10 +160,11 @@
   height: 35px;
   border-radius: 20px;
   margin-left: 1050px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
   background: rgb(207, 207, 207);
 }
 .search > h4{
   margin-left: 900px;
+  margin-bottom: -50px;
   font-size: 20px;
 }
