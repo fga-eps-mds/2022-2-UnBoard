@@ -7,6 +7,7 @@ app = Dash(__name__)
 year = 23
 df = pd.read_excel(f"../databases/VESTUNB_{year}.xlsx")
 Nome = "Administração (Bacharelado)" #nome que deseja pesquisar
+ano = [2015, 2016, 2017, 2018, 2019, 2020, 2022, 2023]
 
 cursos = df.iloc[12:][1].tolist()
 
@@ -42,6 +43,30 @@ def get_courses(year):
     return cursos
 
 cont = 0
+
+def get_courses(year):
+    df = pd.read_excel(f"../databases/VESTUNB_{year}.xlsx")
+    if (year == 15):
+        cursos = df.iloc[9:][1].tolist()
+
+    if (year == 16):
+        cursos = df.iloc[9:][1].tolist()
+
+    if (year == 17):
+        cursos = df.iloc[9:][1].tolist()
+
+    if (year == 18):
+        cursos = df.iloc[9:][1].tolist()
+
+    if (year == 19):
+        cursos = df.iloc[11:][1].tolist()
+
+    if (year == 22):
+        cursos = df.iloc[12:][1].tolist()
+
+    if (year == 23):
+        cursos = df.iloc[12:][1].tolist()
+    return cursos
 
 def gerar_grafico(df):
     if 100 in df.columns:
@@ -175,16 +200,6 @@ app.layout = html.Div(style={'background-color': '#003366'},
     children=[
     html.H1(children='Grafico vagas e inscritos' , style={'color': 'white', 'text-align': 'center'}),
 
-    html.Div(style={'display': 'inline-block', 'margin-right': '10px'}, children=[
-    html.Button(id='2015-button', n_clicks=0, children='2015'),
-    html.Button(id='2016-button', n_clicks=0, children='2016'),
-    html.Button(id='2017-button', n_clicks=0, children='2017'),
-    html.Button(id='2018-button', n_clicks=0, children='2018'),
-    html.Button(id='2019-button', n_clicks=0, children='2019'),
-    html.Button(id='2022-button', n_clicks=0, children='2022'),
-    html.Button(id='2023-button', n_clicks=0, children='2023')
-    ]),
-
     html.Div([
         dcc.Dropdown(
             id="dropdown-cursos",
@@ -194,12 +209,29 @@ app.layout = html.Div(style={'background-color': '#003366'},
         html.Div(id="output")
     ]),
 
+    html.Div([
+        dcc.Dropdown(
+            id="dropdown-ano",
+            options=[2015, 2016, 2017, 2018, 2019, 2020, 2022, 2023],
+            value=ano[7]
+        ),
+        html.Div(id="outputAno")
+    ]),
+
     dcc.Graph(
         id='example-graph',
         figure=fig
     )
 ])
 
+@app.callback(
+    Output('dropdown-cursos','options'),
+    [dash.dependencies.Input("dropdown-ano", "value")]
+)
+def update_year(value):
+    year = value-2000
+    updated_cursos = get_courses(year)
+    return [{"label": curso, "value": curso} for curso in updated_cursos]
 
 @app.callback(
     Output('example-graph','figure'),
