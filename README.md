@@ -48,6 +48,7 @@ Para executar o projeto corretamente é necessário ter instalado em seu computa
 * Executando via código fonte
 ```
 git clone https://github.com/fga-eps-mds/2022-2-UnBoard.git
+npm i react-router-dom
 ```
 * Pacote Python
 ```
