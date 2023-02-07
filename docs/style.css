@@ -195,7 +195,7 @@ body {
     margin-right: 50px;
 }
 
-.titulo-quinto-conteudo {
+.quinto-conteudo > h5 {
     border-top: 2px solid #ffffff;
     padding-top: 48px;
     font-family: 'Arvo', serif;
@@ -212,7 +212,7 @@ body {
     margin-top: 20px;
 }
 
-.paragrafo-quinto-conteudo {
+.quinto-conteudo > p {
     font-family: 'Arvo', serif;
     font-weight: 400;
     font-size: 20px;
