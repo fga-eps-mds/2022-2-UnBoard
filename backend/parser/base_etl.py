@@ -61,7 +61,6 @@ class BaseETL(abc.ABC):
         """
         pass
 
-    @abc.abstractmethod
     def load(self) -> None:
         """
         exporta os dados para um csv

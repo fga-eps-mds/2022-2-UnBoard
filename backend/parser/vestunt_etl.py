@@ -1,8 +1,9 @@
 import abc
 import typing
-from pathlib import Path
-from backend.parser.vest.spiders.pdf_spider import PdfSpider
-from parser.base_etl import BaseETL
+import os
+from vest.spiders.pdf_spider import PdfSpider
+from base_etl import BaseETL
+from utils.web import dowload_dados_web
 
 
 class VestUnbETL(BaseETL):
@@ -10,10 +11,10 @@ class VestUnbETL(BaseETL):
     Estrutura que manipula arquivos referente aos dados
     """
 
-    URL: str = "https://www.cebraspe.org.br/vestibulares"
-    URL_ENC: str = f"{URL}/encerrado"
-
-    def __init__(self, input: str, output: str, create_path: bool = True, status: bool = True):
+    def __init__(self, input: str,
+                 output: str,
+                 create_path: bool = True,
+                 status: bool = True):
         """
         Instancia um objeto ETL
         :param input: string contendo o diretorio dos dados de entrada
@@ -28,7 +29,18 @@ class VestUnbETL(BaseETL):
     def links_vestibular(self) -> typing.Dict[str, str]:
         spider = PdfSpider()
         return spider.get_links()
-    
+
+    def pdfs_para_baixar(self) -> typing.Dict[str, str]:
+        pdfs = self.links_vestibular()
+        baixados = os.listdir(str(self.path_input))
+        return {arq: link for arq, link in pdfs.items() if arq not in baixados}
+
+    def download_pdfs(self) -> None:
+        pdfs_para_baixar = self.pdfs_para_baixar()
+        for arq in pdfs_para_baixar:
+            caminho_arq = self.path_output / arq
+            dowload_dados_web(caminho_arq, pdfs_para_baixar[arq])
+
     @abc.abstractmethod
     def extract(self) -> None:
         """
@@ -43,19 +55,3 @@ class VestUnbETL(BaseETL):
         de saida de interesse
         """
         pass
-
-    @abc.abstractmethod
-    def load(self) -> None:
-        """
-        exporta os dados para um csv
-        """
-        for arq, df in self.data_output.items():
-            df.to_parquet(self.path_output / arq, index=False)
-
-    def pipeline(self) -> None:
-        """
-        executa o pipeline completo
-        """
-        self.extract()
-        self.transform()
-        self.load()
