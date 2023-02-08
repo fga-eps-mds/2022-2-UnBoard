@@ -43,18 +43,33 @@
 
 ## :hammer: Guia de Instalação
 ### Dependências 
-Para executar o projeto corretamente é necessário ter instalado em seu computador o [Python](https://www.python.org/downloads/), [SQLite](https://www.sqlite.org/download.html) e o [NodeJs](https://nodejs.org/en/download/).
-### Instalação e execução 
+Para executar o projeto corretamente é necessário ter instalado em seu computador o [Python](https://www.python.org/downloads/), do gerenciador de pacotes python [Poetry](https://python-poetry.org/docs/) e o [NodeJs](https://nodejs.org/en/download/).
+### Instalação do projeto
 * Executando via código fonte
 ```
 git clone https://github.com/fga-eps-mds/2022-2-UnBoard.git
-npm i react-router-dom
 ```
-* Pacote Python
+### Dependencias 
+apos clonar o repositório do projeto, em seu terminal execute os seguinte comandos 
 ```
-pip install UnBoard
+cd 2022-2-UnBoard
+poetry install
+cd front-end
+npm install
 ```
 
+### Executando
+para executar o projeto navegue para a pasta do peojeto e exeute os comandos
+```
+cd back-end/dashboard/grafico.py
+python grafico.py
+```
+em seguida abra um novo terminal na pasta do projeto, e então excute os seguintes comandos para criar o site da aplicação
+```
+cd front-end
+npm start
+```
+pronto, agora basta acessar a pagina gerada em seu navegador favorito. 
  ## 👨‍💻 Contribuidores
   
   <a href="https://github.com/Raphides">Raphael Silva</a><br></br>
